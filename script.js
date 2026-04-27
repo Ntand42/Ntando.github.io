@@ -214,13 +214,20 @@ function initLiquidGlass() {
     bgCtx.fillRect(0, 0, w, h);
 
     const pr = renderer.getPixelRatio();
-    const navH = Math.round((document.querySelector(".navbar")?.offsetHeight || 80) * pr);
+    const navEl = document.querySelector(".navbar");
+    const navCssH = navEl?.offsetHeight || 80;
+    const navH = Math.round(navCssH * pr);
     const safeH = Math.max(0, h - navH);
-    const scrollPx = Math.round(window.scrollY * pr);
-    const safeTop = navH - scrollPx;
-    const safeBottom = navH + safeH - scrollPx;
 
-    if (safeH > 0 && splashImage.complete && splashImage.naturalWidth > 0) {
+    const splashEl = document.getElementById("splash");
+    const splashCssH = splashEl?.offsetHeight || window.innerHeight;
+    const splashLimitPx = Math.max(0, Math.round((splashCssH - navCssH) * pr));
+    const showSplash = Math.round(window.scrollY * pr) < splashLimitPx;
+
+    const safeTop = navH;
+    const safeBottom = navH + safeH;
+
+    if (showSplash && safeH > 0 && splashImage.complete && splashImage.naturalWidth > 0) {
       const leftText = "SOFTWARE";
       const rightText = "DEVELOPER </>";
       const sideText =
