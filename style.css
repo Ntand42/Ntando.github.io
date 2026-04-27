@@ -511,10 +511,12 @@ body {
 .splash {
     position: relative;
     height: 100vh;
+    height: 100svh;
+    height: 100dvh;
     width: 100%;
     margin: 0;
     max-width: none;
-    padding: 80px 0 0;
+    padding: calc(80px + env(safe-area-inset-top)) 0 0;
     border: none;
     border-radius: 0;
     background: transparent;
@@ -538,7 +540,7 @@ canvas {
 
 .splash .info {
     position: absolute;
-    bottom: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
     left: 50%;
     transform: translateX(-50%);
     font: 16px/1.1 "VT323", monospace;
@@ -548,6 +550,16 @@ canvas {
     user-select: none;
     letter-spacing: 0.04em;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .splash {
+        padding: calc(110px + env(safe-area-inset-top)) 0 0;
+    }
+
+    .splash .info {
+        font-size: 14px;
+    }
 }
 .about-section {
   padding: 100px 0;
