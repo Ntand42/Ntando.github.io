@@ -462,11 +462,11 @@ img {
 
 /* DIFFERENT LOGOS */
 .promotion-card.panda::before {
-    background-image: url("../SkillsPandaLogo.jpg");
+    background-image: url("assets/SkillsPandaLogo.jpg");
 }
 
 .promotion-card.singular::before {
-    background-image: url("../SingularSystemLogo.jpeg");
+    background-image: url("assets/SingularSystemLogo.jpeg");
 }
 
 /* HOVER EFFECT 🔥 */

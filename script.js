@@ -178,7 +178,7 @@ function initLiquidGlass() {
   bgTexture.magFilter = THREE.LinearFilter;
   const splashImage = new Image();
   splashImage.decoding = "async";
-  splashImage.src = new URL("../NtandoMsw.png", import.meta.url).toString();
+  splashImage.src = new URL("./assets/NtandoMsw.png", import.meta.url).toString();
   let bgDirty = true;
   let parallaxTargetY = 0;
   let parallaxY = 0;
