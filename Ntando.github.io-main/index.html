@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Ntando Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="app"></div>
+    <section id="splash" class="splash">
+        <div class="info">drag to interact &middot; click to spawn</div>
+    </section>
+
+    <!-- 🔥 LIQUID BACKGROUND -->
+    <div id="liquid-bg"></div>
+
+    <div class="cursor-glow"></div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Ntando</div>
+        <ul>
+            <li><a href="#splash">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<section class="stats">
+  <div class="container">
+
+    <h2 class="section-title">My Stats</h2>
+
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <div class="circle" data-percent="100" style="--percent: 100;">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress"></circle>
+          </svg>
+          <div class="number"><img src="../Briefcase.svg" alt="Briefcase"></div>
+        </div>
+        <p>1 Year Professional Experience</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="circle" data-percent="100" style="--percent: 100;">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress"></circle>
+          </svg>
+          <div class="number"><img src="../Folder.svg" alt="Folder"></div>
+        </div>
+        <p>5+ Projects Built</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="circle" data-percent="100" style="--percent: 100;">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress"></circle>
+          </svg>
+          <div class="number"><img src="../APis.svg" alt="APIs"></div>
+        </div>
+        <p>APIs, JWT &amp; SQL Experience</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="circle" data-percent="100" style="--percent: 100;">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress"></circle>
+          </svg>
+          <div class="number"><img src="../Globe.svg" alt="Globe"></div>
+        </div>
+        <p>Production Ready Applications</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="skills">
+  <div class="container skills-container">
+
+    <div class="skills-content">
+      <h2>Tech Stack</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img class="skill-bg" src="../React-icon.svg.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="skill-title">React</div>
+          <div class="skill-desc">Frontend Development</div>
+        </div>
+
+        <div class="skill-card">
+          <img class="skill-bg" src="../net%20%23c.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="skill-title">ASP.NET (C#)</div>
+          <div class="skill-desc">Backend Development</div>
+        </div>
+
+        <div class="skill-card">
+          <img class="skill-bg" src="../microsoft-sql-server.png" alt="" aria-hidden="true" loading="lazy" decoding="async" onerror="this.remove()">
+          <div class="skill-title">SQL Server</div>
+          <div class="skill-desc">Database Management</div>
+        </div>
+
+        <div class="skill-card">
+          <img class="skill-bg" src="../Java.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="skill-title">Java</div>
+          <div class="skill-desc">Programming Fundamentals</div>
+        </div>
+
+        <div class="skill-card">
+          <img class="skill-bg" src="../php.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="skill-title">PHP</div>
+          <div class="skill-desc">Server-Side Web Development</div>
+        </div>
+
+        <div class="skill-card">
+          <img class="skill-bg" src="../Laravel.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="skill-title">Laravel</div>
+          <div class="skill-desc">PHP Framework</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="promotion-card-deck">
+
+    <div class="promotion-card panda">
+        <div class="promotion-content">
+            <h3>Skills Panda</h3>
+            <p><strong>Full Stack Developer</strong></p>
+            <p>
+                Built a full HR & Payroll system with RBAC, multi-tenant architecture,
+                reporting tools, and scalable backend features.
+            </p>
+        </div>
+    </div>
+
+    <div class="promotion-card singular">
+        <div class="promotion-content">
+            <h3>Singular Systems</h3>
+            <p><strong>Software Development Learner</strong></p>
+            <p>
+                Worked on web applications using React and APIs, improving system functionality
+                and user experience.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <!-- PROJECT 1 (UNCHANGED) -->
+    <div class="project-row reverse">
+        <div class="project-text">
+            <h3>Kiosk Management System</h3>
+
+            <div class="tech-stack">
+                <span>React</span>
+                <span>ASP.NET API</span>
+                <span>JWT</span>
+                <span>Entity Framework</span>
+                <span>REST APIs</span>
+            </div>
+
+            <p>
+                Full-stack kiosk system with product browsing, cart management, and order processing.
+                Includes an admin dashboard, secure JWT authentication, and scalable REST APIs.
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/Ntand42/react-kiosk-new" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </div>
+        </div>
+        
+        <div class="carousel">
+
+            <button class="prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="../Kiosk Menu .png" class="carousel-item active">
+                <img src="../Cartitems.png" class="carousel-item">
+                <img src="../Kiosk admin dashboard.png" class="carousel-item">
+                <img src="../Orderhistory.png" class="carousel-item">
+            </div>
+
+            <button class="next">&#10095;</button>
+
+        </div>
+    </div>
+
+    <!-- PROJECT 2 (UPDATED WITH CAROUSEL) -->
+    <div class="project-row">
+        <div class="project-text">
+            <h3>Job Tracker Application</h3>
+
+            <div class="tech-stack">
+                <span>.NET 8</span>
+                <span>ASP.NET MVC</span>
+                <span>SQL Server</span>
+                <span>Bootstrap</span>
+                <span>RBAC</span>
+            </div>
+
+            <p>
+                Full-stack job tracking system that allows users to manage applications, track progress,
+                and view analytics like success rates and trends. Includes authentication,
+                role-based access control, and a personalized dashboard.
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/Ntand42/JobTracker" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </div>
+        </div>
+
+        <!-- NEW CAROUSEL -->
+        <div class="carousel">
+
+            <button class="prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="../User Dashboard.png" class="carousel-item active">
+                <img src="../JobTracker Add Position .png" class="carousel-item">
+                <img src="../Job Tracker Details.png" class="carousel-item">
+                <img src="../SuperUserDash.png" class="carousel-item">
+                <img src="../JobTracker Jobs.png" class="carousel-item">
+            </div>
+
+            <button class="next">&#10095;</button>
+
+        </div>
+    </div>
+
+</section>
+
+   <section id="about" class="about-section">
+  <div class="container">
+
+    <h2>About</h2>
+
+    <div class="about-grid">
+
+      <!-- LEFT IMAGE -->
+      <div class="about-image about-image-full">
+        <img src="../Passionate Deve.png" alt="Passion Person">
+      </div>
+
+      <!-- TEXT BLOCK -->
+      <div class="about-text">
+        <p>I’m passionate about software development because it allows me to turn ideas into real, functional products that solve everyday problems. I enjoy the process of building from the ground up taking an idea, designing the experience, and bringing it to life through code.</p>
+        <p>I’ve worked on a range of projects, including web applications, interactive dashboards, and mobile applications. I’ve also gained professional experience building web applications in a structured environment, which strengthened my understanding of real-world development practices and collaboration. These experiences have helped me develop a strong foundation in creating user-friendly interfaces, working with APIs, and building applications that are both practical and scalable.</p>
+        <p>I have a particular interest in frontend development and UI design, where I focus on creating clean, responsive, and engaging user experiences. At the same time, I’m comfortable working across the full stack when needed, especially in building structured and functional web applications.</p>
+        <p>I’m continuously learning and improving my skills in modern web technologies, with a focus on building efficient, intuitive, and impactful software.</p>
+      </div>
+
+
+      <!-- BOTTOM RIGHT IMAGE -->
+      <div class="about-image small">
+        <img src="../Passionate Dev.png" alt="Passionate Dev">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Let’s Have a Talk</h2>
+        <p>Email: ntandom2003@email.com</p>
+        <div class="contact-actions">
+            <a href="assets/Ntando_Msweli_Resume_CV.pdf" download="Ntando_Msweli_Resume_CV.pdf" class="contact-btn">Download CV</a>
+            <a href="https://github.com/Ntand42" target="_blank" rel="noopener noreferrer" class="contact-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/ntando-msweli-ba5018251/" target="_blank" rel="noopener noreferrer" class="contact-btn">LinkedIn</a>
+        </div>
+    </section>
+<script type="module" src="script.js"></script>
+</body>
+</html>
