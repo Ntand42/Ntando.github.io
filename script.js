@@ -228,7 +228,7 @@ function initLiquidGlass() {
     const safeBottom = navH + safeH;
 
     if (showSplash && safeH > 0 && splashImage.complete && splashImage.naturalWidth > 0) {
-      const leftText = "FRONTEND";
+      const leftText = "SOFTWARE";
       const rightText = "DEVELOPER </>";
       const sideText =
         "A software developer passionate about building things that actually work in the real world. I enjoy solving problems and bringing ideas to life through code.";
